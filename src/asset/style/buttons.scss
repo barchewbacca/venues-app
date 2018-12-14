@@ -1,0 +1,28 @@
+.button {
+  $this: &;
+  @include button-reset;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid $colorGreyDark;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: $colorGreyDark;
+  background-color: transparent;
+  height: 3rem;
+  cursor: pointer;
+  padding: 0 0.9rem;
+  outline: none;
+
+  @include respond-to(MEDIUM) {
+    font-size: 1.2rem;
+    height: 3.6rem;
+    padding: 0 1.2rem;
+  }
+
+  &--white {
+    color: $colorWhite;
+    border-color: $colorWhite;
+  }
+}

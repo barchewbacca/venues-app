@@ -1,0 +1,19 @@
+/* stylelint-disable-next-line block-no-empty */
+:local {
+  .filter-button + .filter-button {
+    margin-left: 1rem;
+  }
+
+  .filter-checkbox {
+    @include visually-hidden;
+  }
+
+  .filter-label {
+    transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+
+  .filter-checkbox:checked + .filter-label {
+    background-color: $colorGreen;
+    border-color: $colorGreen;
+  }
+}

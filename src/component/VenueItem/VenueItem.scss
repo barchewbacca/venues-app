@@ -1,0 +1,68 @@
+/* stylelint-disable-next-line block-no-empty */
+:local {
+  .venue-item {
+    padding: 2rem;
+    border-top: 0.1rem solid $colorGrey;
+    display: flex;
+
+    @include respond-to(MEDIUM) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  .venue-thumb {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: $colorDark;
+    background-size: 3.2rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 0.3rem;
+    flex-shrink: 0;
+
+    @include respond-to(MEDIUM) {
+      width: 11rem;
+      height: 11rem;
+      background-size: 4.4rem;
+    }
+  }
+
+  .venue-info {
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    color: $colorDark;
+    flex-grow: 1;
+
+    @include respond-to(MEDIUM) {
+      padding-left: 2.5rem;
+    }
+  }
+
+  .category-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: $colorBlue;
+    margin-right: 0.5rem;
+    border-radius: 0.3rem;
+  }
+
+  .info-row {
+    margin-top: 1rem;
+  }
+
+  .category-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .venue-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $colorGreen;
+
+    @include respond-to(MEDIUM) {
+      font-size: 2.4rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+/* stylelint-disable-next-line block-no-empty */
+:local {
+  .header {
+    color: $colorWhite;
+    background-color: $colorBlue;
+  }
+
+  .inner {
+    @include respond-to(MEDIUM) {
+      height: 6rem;
+    }
+  }
+}

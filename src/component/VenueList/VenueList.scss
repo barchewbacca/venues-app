@@ -1,0 +1,32 @@
+/* stylelint-disable-next-line block-no-empty */
+:local {
+  .venue-list {
+    background-color: $colorWhite;
+    border: 0.1rem solid $colorGrey;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    @include respond-to(MEDIUM) {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .venue-list-header {
+    padding: 2rem;
+
+    @include respond-to(MEDIUM) {
+      padding: 3rem;
+    }
+  }
+
+  .title {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: rgba($colorBlack, 0.87);
+
+    @include respond-to(MEDIUM) {
+      font-size: 2rem;
+    }
+  }
+}
