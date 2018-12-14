@@ -6,7 +6,6 @@ const namespace = 'app';
 export const SET_DEVICE_STATE = `${namespace}/setDeviceState`;
 
 export default {
-  // namespaced: true,
   state: {
     venues: null,
     settings: null,
@@ -64,11 +63,7 @@ export default {
     async getVenues({ commit, dispatch }) {
       await dispatch('getLocation');
       const payload = { section: this.state.app.section, ...this.state.app.location };
-      console.log(payload);
       getVenues(payload).then(({ data }) => commit('setVenues', data.response));
     },
-    // applyCategoryFilter({ commit }, payload) {
-    //   console.log('filter apply', payload);
-    // },
   },
 };
