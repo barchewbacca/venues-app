@@ -28,3 +28,4 @@ Live version of the web app availiable here: https://venues-app.now.sh/
 - Add map with results;
 - Add filtering by open status;
 - Add sorting by distance/popular;
+- Refactor some components and remove redundant stuff that came with the vue-skeleton
