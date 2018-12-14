@@ -24,5 +24,7 @@ Live version of the web app availiable here: https://venues-app.now.sh/
 
 - Add preloader for the page load and all the async calls;
 - Implement pagination/loadmore;
+- Add predictive search field with locations;
+- Add map with results;
 - Add filtering by open status;
 - Add sorting by distance/popular;
